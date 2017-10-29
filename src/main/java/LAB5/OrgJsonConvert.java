@@ -15,7 +15,7 @@ public class OrgJsonConvert {
     public static void toJSON(Employeer employeer) throws IOException {
 
         FileWriter writer = new FileWriter(baseFile);
-        JSONObject obj=new JSONObject();
+        JSONObject obj=new JSONObject(employeer);
         obj.put("id",employeer.id);
         obj.put("firstName",employeer.firstName);
         obj.put("secondName", employeer.secondName);
