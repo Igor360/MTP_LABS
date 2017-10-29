@@ -1,8 +1,5 @@
 package LAB6;
 
-
-import com.sun.xml.internal.bind.v2.model.core.EnumConstant;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 
