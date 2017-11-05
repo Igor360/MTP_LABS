@@ -1,35 +1,36 @@
 package LAB6;
 
+import lombok.Getter;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ReadFile {
     private FileReader fileReader = null;
     private BufferedReader bufReader = null;
     public String pathToFile = null;
-    private String readData = null;
+    @Getter
+    private List<String> words  = new ArrayList<String>();
 
 
-    private boolean isRead = false;
-
+    public List<String> getWords() {
+        return words;
+    }
 
     public ReadFile(String path) throws Exception{
-            this.pathToFile = path;
-            this.fileReader = new FileReader(path);
-            this.bufReader = new BufferedReader(this.fileReader);
+        this.pathToFile = path;
+        this.fileReader = new FileReader(path);
+        this.bufReader = new BufferedReader(this.fileReader);
     }
 
     public void read() throws Exception{
-            this.readData = this.bufReader.readLine();
-            if (this.readData != null) {
-                this.isRead = true;
-            }else {
-                this.isRead = false;
-            }
+        String readData = null;
+        while ((readData = this.bufReader.readLine()) != null){
+            this.words.add(readData);
+        }
     }
 
-    public String getReadData(){
-            return this.readData;
-    }
 
 }

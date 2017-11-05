@@ -1,10 +1,10 @@
 package LAB5;
 
 public class Employee extends Worker {
-        private boolean isOnWork = false;
+    private boolean isOnWork = false;
 
     public Employee(){
-            super();
+        super();
     }
 
     public Employee(String firstName, String secondName, String lastName, String number, String address){
