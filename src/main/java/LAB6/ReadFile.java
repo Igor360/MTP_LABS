@@ -11,7 +11,6 @@ public class ReadFile {
     private FileReader fileReader = null;
     private BufferedReader bufReader = null;
     public String pathToFile = null;
-    @Getter
     private List<String> words  = new ArrayList<String>();
 
 

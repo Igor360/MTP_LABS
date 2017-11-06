@@ -1,4 +1,4 @@
-package java.LAB7.TESTS;
+package LAB7.TESTS;
 
 import java.util.Set;
 import javax.validation.ConstraintViolation;
@@ -18,7 +18,7 @@ public class UserTest {
     private static Validator validator;
 
     @Before
-    public static void setUp() {
+    public void setUp() {
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         validator = factory.getValidator();
     }
@@ -30,9 +30,9 @@ public class UserTest {
         Set<ConstraintViolation<User>> constraintViolations =
                 validator.validate( user );
 
-        Assert.assertEquals( 1, constraintViolations.size() );
+        Assert.assertEquals( 6, constraintViolations.size() );
         Assert.assertEquals(
-                "may not be null",
+                "must be greater than 0",
                 constraintViolations.iterator().next().getMessage()
         );
     }
@@ -45,9 +45,9 @@ public class UserTest {
         Set<ConstraintViolation<User>> constraintViolations =
                 validator.validate( user );
 
-        Assert.assertEquals( 1, constraintViolations.size() );
+        Assert.assertEquals( 4, constraintViolations.size() );
         Assert.assertEquals(
-                "size must be between 0 and 9999",
+                "must be greater than 0",
                 constraintViolations.iterator().next().getMessage()
         );
     }
@@ -61,9 +61,9 @@ public class UserTest {
         Set<ConstraintViolation<User>> constraintViolations =
                 validator.validate( user );
 
-        Assert.assertEquals( 1, constraintViolations.size() );
+        Assert.assertEquals( 5, constraintViolations.size() );
         Assert.assertEquals(
-                "must be positive",
+                "must be greater than 0",
                 constraintViolations.iterator().next().getMessage()
         );
     }
@@ -71,15 +71,15 @@ public class UserTest {
 
     @Test
     public void test4() {
-        User user = new User( 122, "DD-AB-123", "fdff","dsd@www.com" );
+        User user = new User( 122, "DD-AB-123", "fdffffff","dsd@www.com" );
 
         user.setShopping(null);
         Set<ConstraintViolation<User>> constraintViolations =
                 validator.validate( user );
 
-        Assert.assertEquals( 1, constraintViolations.size() );
+        Assert.assertEquals( 4, constraintViolations.size() );
         Assert.assertEquals(
-                "may not be null",
+                "must be greater than 0",
                 constraintViolations.iterator().next().getMessage()
         );
     }
