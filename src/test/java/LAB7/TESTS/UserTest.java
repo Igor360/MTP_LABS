@@ -55,13 +55,13 @@ public class UserTest {
 
     @Test
     public void test3() {
-        User user = new User( 122, "DD-AB-123", "fdff","dsd@www.com"  );
+        User user = new User( 122, "DD-AB-123", "fdfffffff","dsd@www.com"  );
 
         user.setMoney(-0.9);
         Set<ConstraintViolation<User>> constraintViolations =
                 validator.validate( user );
 
-        Assert.assertEquals( 5, constraintViolations.size() );
+        Assert.assertEquals( 4, constraintViolations.size() );
         Assert.assertEquals(
                 "must be greater than 0",
                 constraintViolations.iterator().next().getMessage()
