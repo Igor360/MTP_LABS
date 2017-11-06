@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e72efb7c-5175-4c7c-9d89-d3c42e322ba8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/LAB7/User.java" afterPath="$PROJECT_DIR$/src/main/java/LAB7/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/LAB7/TESTS/UserTest.java" afterPath="$PROJECT_DIR$/src/test/java/LAB7/TESTS/UserTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -92,10 +93,14 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/LAB7/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+            <state relative-caret-position="256">
+              <caret line="125" column="30" lean-forward="false" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2183#2184#0" expanded="true" />
+                <element signature="e#2214#2215#0" expanded="true" />
+                <element signature="e#2258#2259#0" expanded="true" />
+                <element signature="e#2297#2298#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,8 +123,8 @@
       <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/LAB7/TESTS/UserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+            <state relative-caret-position="480">
+              <caret line="105" column="33" lean-forward="false" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,7 +135,7 @@
       <file leaf-file-name="AllDefaultPossibilitiesBuilder.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/builders/AllDefaultPossibilitiesBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
+            <state relative-caret-position="103">
               <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
@@ -533,9 +538,9 @@
         <option value="$PROJECT_DIR$/src/test/java/LAB7/TESTS/Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/L7/TESTS.java" />
         <option value="$PROJECT_DIR$/src/test/java/L7.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LAB7/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/LAB6/ReadFile.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/LAB7/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/LAB7/TESTS/UserTest.java" />
       </list>
     </option>
@@ -895,38 +900,45 @@
       <option name="project" value="LOCAL" />
       <updated>1509958721685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- some changes">
+      <created>1509959129640</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1509959129640</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_(1) - 2017.11.06 at 10h 51m 20s.xml">
+    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 17m 36s.xml">
       <configuration name="UserTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_(1) - 2017.11.06 at 10h 54m 55s.xml">
+    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 18m 00s.xml">
       <configuration name="UserTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_(1) - 2017.11.06 at 10h 55m 24s.xml">
+    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 18m 48s.xml">
       <configuration name="UserTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_(1) - 2017.11.06 at 10h 57m 41s.xml">
+    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 19m 51s.xml">
       <configuration name="UserTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_(1) - 2017.11.06 at 10h 57m 59s.xml">
+    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 22m 28s.xml">
       <configuration name="UserTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_(1) - 2017.11.06 at 10h 58m 20s.xml">
+    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 23m 00s.xml">
       <configuration name="UserTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 02m 19s.xml">
+    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 23m 13s.xml">
       <configuration name="UserTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 02m 52s.xml">
+    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 25m 00s.xml">
       <configuration name="UserTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 03m 47s.xml">
+    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 25m 16s.xml">
       <configuration name="UserTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 04m 03s.xml">
+    <history-entry file="UserTest_(1) - 2017.11.06 at 11h 25m 31s.xml">
       <configuration name="UserTest (1)" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -941,7 +953,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32657418" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32657418" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32657418" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1011,6 +1023,10 @@
           <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2258#2259#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1272,6 +1288,10 @@
           <caret line="21" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2258#2259#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1318,16 +1338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LAB5/TESTS/GoogleJsonConvertTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1338,18 +1348,32 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/builders/AllDefaultPossibilitiesBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
+        <state relative-caret-position="103">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LAB7/User.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/LAB5/TESTS/GoogleJsonConvertTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        <state relative-caret-position="187">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LAB7/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="125" column="30" lean-forward="false" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2258#2259#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1368,8 +1392,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LAB7/TESTS/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+        <state relative-caret-position="480">
+          <caret line="105" column="33" lean-forward="false" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

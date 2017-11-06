@@ -122,8 +122,8 @@ public class User {
         return shopping;
     }
 
-    public void setShopping(List<Object> shopping) {
-        this.shopping = shopping;
+    public void setShopping(Object shop) {
+        this.shopping.add(shop);
     }
 
     public Map<String, Integer> getThing() {
