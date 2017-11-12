@@ -1,6 +1,5 @@
 package LAB6;
 
-import com.sun.xml.internal.fastinfoset.util.CharArray;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,7 +12,7 @@ import java.util.*;
  */
 public class WordHandler {
 
-    @Getter
+   
     private static Map<Integer,List<String>> dictionaryWords = new HashMap<Integer, List<String>>();
     @Getter
     private static Set<Integer> keys = null;
