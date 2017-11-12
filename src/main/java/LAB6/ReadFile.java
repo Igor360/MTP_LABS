@@ -16,7 +16,6 @@ public class ReadFile {
     private FileReader fileReader = null;
     private BufferedReader bufReader = null;
     public String pathToFile = null;
-    @Getter
     private Map<Integer,List<String>> dictionaryWords = new HashMap<Integer, List<String>>();
 
 
