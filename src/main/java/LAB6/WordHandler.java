@@ -42,15 +42,7 @@ public class WordHandler {
     public static String getLongestConcatenatedWord2(){
         int [] sizeConcatWorld = getSizeListConcat();
         Arrays.sort(sizeConcatWorld);
-        int indexLasEl = sizeConcatWorld.length-1;
-        for (int i =  indexLasEl; i>= 1; i--){
-            if(sizeConcatWorld[i] > sizeConcatWorld[i-1])
-            {
-                indexLasEl = i-1;
-                break;
-            }
-        }
-        return getWorldBySize(sizeConcatWorld[indexLasEl]);
+        return getWorldBySize(sizeConcatWorld[sizeConcatWorld.length-2]);
     }
 
     /**
@@ -154,10 +146,11 @@ public class WordHandler {
             List<String> words = dictionaryWords.get(key);
             if (words  != null)
             for (String val : words) {
-                if(!val.equals(newWord))
-                if (mainWord.contains(val) && val.length() > 1 && val != mainWord) {
+                if(!val.equals(newWord)){
+                  if (mainWord.contains(val) && val.length() > 1 && val != mainWord) {
                     setWorldPart(mainWord, val);
                 }
+            }
             }
         }
     }
@@ -191,7 +184,7 @@ public class WordHandler {
         for (String key: keys) {
             if (wordPart.get(key).size() == size){
                 word = key ;
-               return  word;
+                return  word;
             }
         }
         return word;
@@ -206,7 +199,8 @@ public class WordHandler {
     public static void setWorldPart(String key, String value){
         List<String> listwords = new ArrayList<String>();
         if(wordPart.containsKey(key)){
-            if (!wordPart.get(key).contains(value)){
+            String newWord = String.valueOf(deleteEnd(value.toCharArray()));
+            if (!wordPart.get(key).contains(newWord)){
                 wordPart.get(key).add(value);
             }
         }else {
