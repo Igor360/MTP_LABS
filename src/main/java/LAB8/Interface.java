@@ -5,8 +5,9 @@ import LAB6.WordHandler;
 public class Interface {
     public static void main(String [] args){
         try {
-            Client client = new Client();
-            client.executeQuery();
+            Client.getListLargestStars();
+            Client.getListLargestCommited();
+            Client.getInformationAboutRepository();
         } catch (Exception e) {
             e.printStackTrace();
         }

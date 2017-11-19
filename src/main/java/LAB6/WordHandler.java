@@ -42,8 +42,15 @@ public class WordHandler {
     public static String getLongestConcatenatedWord2(){
         int [] sizeConcatWorld = getSizeListConcat();
         Arrays.sort(sizeConcatWorld);
-        String res = getWorldBySize(sizeConcatWorld[sizeConcatWorld.length-1]);
-        return dictionaryWords.get(res.length()-1).get(0);
+        int indexLasEl = sizeConcatWorld.length-1;
+        for (int i =  indexLasEl; i>= 1; i--){
+            if(sizeConcatWorld[i] > sizeConcatWorld[i-1])
+            {
+                indexLasEl = i-1;
+                break;
+            }
+        }
+        return getWorldBySize(sizeConcatWorld[indexLasEl]);
     }
 
     /**
@@ -68,7 +75,7 @@ public class WordHandler {
         int iter = 0;
         Set<String> keys = wordPart.keySet();
         for (String key: keys) {
-             if (wordPart.get(key).size() > 1){
+             if (wordPart.get(key).size() > 2){
                 iter++;
              }
         }
@@ -106,21 +113,10 @@ public class WordHandler {
     private static void addParts(String word){
         char [] mainWord = deleteEnd(word.toCharArray());
         String timeValue = null;
-        int base = 0;
-        boolean is_number = false;
-        for (int start = 0; start < mainWord.length;){
-            base = start;
-            is_number = false;
-            for (int end = 2; (end+start) < mainWord.length; end+=1){
+        for (int start = 0; start < mainWord.length; start+=3){
+            for (int end = 3; (end+start) < mainWord.length; end+=1){
                 timeValue = String.copyValueOf(mainWord, start, end);
-                start += cmpWords(word, timeValue);
-                if (base != start){
-                    is_number = true;
-                    break;
-                }
-            }
-            if(!is_number){
-                start++;
+                cmpWords(word, timeValue);
             }
         }
     }
@@ -135,14 +131,15 @@ public class WordHandler {
     private static int cmpWords(String mainWord, String word){
         int size = word.length();
         List<String> words = null;
-        Integer key = null;
-        if(dictionaryWords.containsKey(word.length())){
-            words = dictionaryWords.get(word.length());
-            if(words.contains(word))
-            {
-                setWorldPart(mainWord, word);
-                return word.length();
-            }
+        boolean[] is_contained = {false};
+            for (Integer key: keys) {
+                if (key >= word.length()){
+                words = dictionaryWords.get(key);
+                words.forEach((var)->{
+                    if (var.contains(word) && mainWord.contains(var)){
+                    setWorldPart(mainWord, word);
+                    }});
+                }
         }
         return 0;
     }
@@ -158,7 +155,7 @@ public class WordHandler {
             if (words  != null)
             for (String val : words) {
                 if(!val.equals(newWord))
-                if (mainWord.contains(val) && val.length() > 0 && val != mainWord) {
+                if (mainWord.contains(val) && val.length() > 1 && val != mainWord) {
                     setWorldPart(mainWord, val);
                 }
             }
@@ -209,7 +206,9 @@ public class WordHandler {
     public static void setWorldPart(String key, String value){
         List<String> listwords = new ArrayList<String>();
         if(wordPart.containsKey(key)){
-            wordPart.get(key).add(value);
+            if (!wordPart.get(key).contains(value)){
+                wordPart.get(key).add(value);
+            }
         }else {
             listwords.add(value);
             wordPart.put(key, listwords);

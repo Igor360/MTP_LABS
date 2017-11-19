@@ -38,6 +38,11 @@ public class Interface {
             start = System.nanoTime();
             System.out.println(String.format("the total count of concatenated words in the file : %s, time: %s", numberConcatWords, WorkInterface.changeTimeFormat(end - start)));
 
+
+
+            System.out.println(WordHandler.wordPart.get("methylcholanthrenes"));
+            System.out.println(WordHandler.wordPart.get("ethylenediaminetetraacetates"));
+            System.out.println(WordHandler.wordPart.get("electroencephalographically"));
         } catch (Exception e) {
             e.printStackTrace();
         }
