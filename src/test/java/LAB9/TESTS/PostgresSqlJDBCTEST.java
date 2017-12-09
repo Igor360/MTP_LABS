@@ -27,7 +27,12 @@ public class PostgresSqlJDBCTEST {
 
         if (is_connected){
             try {
-                con.executeQuery("Select * from users");
+                con.executeQuery("Drop table if exists users1;");
+                con.executeQuery("Create table  users1(id int primary key, name text)");
+            } catch (Exception e) {
+                is_query_executed = true;
+            }
+            try{
                 con.executeQueryWithResult("Select * from users");
                 is_query_executed = true;
             } catch (Exception e) {
