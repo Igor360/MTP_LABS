@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e72efb7c-5175-4c7c-9d89-d3c42e322ba8" name="Default" comment="">
+    <list default="true" id="e72efb7c-5175-4c7c-9d89-d3c42e322ba8" name="Default" comment="fix bugs">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/LAB9/TESTS/PostgresSqlJDBCTEST.java" afterPath="$PROJECT_DIR$/src/test/java/LAB9/TESTS/PostgresSqlJDBCTEST.java" />
     </list>
@@ -133,8 +133,8 @@
       <file leaf-file-name="PostgresSqlJDBCTEST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/LAB9/TESTS/PostgresSqlJDBCTEST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="295">
+              <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,8 +179,8 @@
       <file leaf-file-name="PostgreSqlJDBC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/LAB9/Connector/PostgreSqlJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="-147">
+              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -1049,7 +1049,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512813453213</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix bugs">
+      <created>1512814255003</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1512814255003</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1077,11 +1084,11 @@
     <history-entry file="PostgresSqlJDBCTEST - 2017.12.09 at 12h 10m 24s.xml">
       <configuration name="PostgresSqlJDBCTEST" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QureryGeneratorTEST - 2017.12.09 at 11h 55m 42s.xml">
-      <configuration name="QureryGeneratorTEST" configurationId="JUnit" />
+    <history-entry file="PostgresSqlJDBCTEST - 2017.12.09 at 12h 22m 12s.xml">
+      <configuration name="PostgresSqlJDBCTEST" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QureryGeneratorTEST - 2017.12.09 at 11h 56m 44s.xml">
-      <configuration name="QureryGeneratorTEST" configurationId="JUnit" />
+    <history-entry file="PostgresSqlJDBCTEST - 2017.12.09 at 12h 23m 33s.xml">
+      <configuration name="PostgresSqlJDBCTEST" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1095,7 +1102,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.344207" sideWeight="0.5085379" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47581553" sideWeight="0.4914621" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47581553" sideWeight="0.4914621" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.49583334" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1154,9 +1161,9 @@
     <MESSAGE value="- add test" />
     <MESSAGE value="- some changes" />
     <MESSAGE value="add lab8" />
-    <MESSAGE value="fix bugs" />
     <MESSAGE value="add Lab9" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Lab9" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1583,16 +1590,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/LAB9/Connector/PostgreSqlJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="-147">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LAB9/TESTS/PostgresSqlJDBCTEST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="295">
+          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
