@@ -42,7 +42,7 @@ public class WordHandler {
     public static String getLongestConcatenatedWord2(){
         int [] sizeConcatWorld = getSizeListConcat();
         Arrays.sort(sizeConcatWorld);
-        return getWorldBySize(sizeConcatWorld[sizeConcatWorld.length-2]);
+        return getWorldBySize(sizeConcatWorld[sizeConcatWorld.length-3]);
     }
 
     /**

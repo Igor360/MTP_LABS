@@ -40,9 +40,9 @@ public class Interface {
 
 
 
-            System.out.println(WordHandler.wordPart.get("methylcholanthrenes"));
-            System.out.println(WordHandler.wordPart.get("ethylenediaminetetraacetates"));
-            System.out.println(WordHandler.wordPart.get("electroencephalographically"));
+            //System.out.println(WordHandler.wordPart.get("methylcholanthrenes"));
+            //System.out.println(WordHandler.wordPart.get("ethylenediaminetetraacetates"));
+            //System.out.println(WordHandler.wordPart.get("electroencephalographically"));
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -50,13 +50,13 @@ public class Client {
         }
     }
 
-    private Map<String,Object> getJsonResult() throws  IOException{
+    public Map<String,Object> getJsonResult() throws  IOException{
         ObjectMapper mapper = new ObjectMapper();
         Map<String, Object> map = new HashMap<String, Object>();
         map = mapper.readValue(jsonResult, new TypeReference<Map<String,Object>>(){});
         return map;
     }
-    private ArrayList<Map<String, Object>> getJsonResultInArray() throws  IOException{
+    public ArrayList<Map<String, Object>> getJsonResultInArray() throws  IOException{
         ObjectMapper mapper = new ObjectMapper();
         ArrayList<Map<String, Object>> map = new ArrayList<Map<String, Object>>();
         map = mapper.readValue(jsonResult, new TypeReference<ArrayList<Map<String, Object>>>(){});
@@ -93,7 +93,7 @@ public class Client {
 
 
 
-    private static ArrayList<Map<String, Object>> getMostPopularRepos(){
+    public static ArrayList<Map<String, Object>> getMostPopularRepos(){
         StringBuilder query= new StringBuilder("https://api.github.com/");
         query.append("search/repositories?q=stars:50000..*&sort=stars&order=desc&per_page=10");
         Client client = new Client(query.toString(), "application/vnd.github.mercy-preview+json");
@@ -153,7 +153,8 @@ public class Client {
     }
 
 
-    private static int numCommitsByUser(ArrayList<Map<String,Integer>> commitData){
+
+    public static int numCommitsByUser(ArrayList<Map<String,Integer>> commitData){
         int commits_count = 0;
         for(Map<String, Integer> weekData : commitData){
             commits_count+=weekData.get("c");
